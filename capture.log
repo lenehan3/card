@@ -72,3 +72,5 @@ steam: snapshot 70 selections across 4 sports
   bf_source MLB: [Errno 54] Connection reset by peer
 captured close on 43 pending picks · settled 1
 steam: snapshot 70 selections across 4 sports
+captured close on 43 pending picks · settled 0
+steam: snapshot 84 selections across 4 sports
