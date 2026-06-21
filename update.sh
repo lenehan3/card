@@ -5,6 +5,7 @@ set -e
 cd "$HOME/edge"
 "$HOME/world-cup-2026/.venv/bin/python" dashboard.py >/dev/null 2>&1
 "$HOME/world-cup-2026/.venv/bin/python" cockpit.py >/dev/null 2>&1 || true   # companion cockpit (money-free)
+"$HOME/world-cup-2026/.venv/bin/python" db.py rebuild >/dev/null 2>&1 || true  # rebuild bets.db spine from all logs
 cp "$HOME/world-cup-2026/reports/dashboard.html" "$HOME/card-site/index.html"
 [ -f "$HOME/world-cup-2026/reports/cockpit.html" ] && cp "$HOME/world-cup-2026/reports/cockpit.html" "$HOME/card-site/cockpit.html" || true
 cd "$HOME/card-site"
