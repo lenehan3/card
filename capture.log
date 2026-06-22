@@ -139,3 +139,5 @@ steam: snapshot 116 selections across 4 sports
   bf_source AFL: [Errno 54] Connection reset by peer
 captured close on 58 pending picks · settled 0
 steam: snapshot 80 selections across 4 sports
+captured close on 60 pending picks · settled 1
+steam: snapshot 114 selections across 4 sports
