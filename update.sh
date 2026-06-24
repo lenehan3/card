@@ -9,8 +9,14 @@ cd "$HOME/edge"
 "$HOME/world-cup-2026/.venv/bin/python" multi_tracker.py settle >/dev/null 2>&1 || true  # grade finished legs
 "$HOME/world-cup-2026/.venv/bin/python" cockpit.py >/dev/null 2>&1 || true   # companion cockpit (money-free)
 "$HOME/world-cup-2026/.venv/bin/python" db.py rebuild >/dev/null 2>&1 || true  # rebuild bets.db spine from all logs
-cp "$HOME/world-cup-2026/reports/dashboard.html" "$HOME/card-site/index.html"
-[ -f "$HOME/world-cup-2026/reports/cockpit.html" ] && cp "$HOME/world-cup-2026/reports/cockpit.html" "$HOME/card-site/cockpit.html" || true
+# EPIC COCKPIT is now the DEFAULT page (index.html); old dashboard kept at /dashboard.html as backup
+if [ -f "$HOME/world-cup-2026/reports/cockpit.html" ]; then
+  cp "$HOME/world-cup-2026/reports/cockpit.html" "$HOME/card-site/index.html"
+  cp "$HOME/world-cup-2026/reports/cockpit.html" "$HOME/card-site/cockpit.html"
+else
+  cp "$HOME/world-cup-2026/reports/dashboard.html" "$HOME/card-site/index.html"
+fi
+cp "$HOME/world-cup-2026/reports/dashboard.html" "$HOME/card-site/dashboard.html" 2>/dev/null || true
 cd "$HOME/card-site"
 git add -A
 if git diff --cached --quiet; then
