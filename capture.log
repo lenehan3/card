@@ -316,3 +316,9 @@ captured close on 0 pending picks · settled 1
 steam: snapshot 84 selections across 4 sports
 captured close on 26 pending picks · settled 0
 steam: snapshot 82 selections across 4 sports
+  bf_source WC: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+  bf_source MLB: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+  bf_source NRL: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+  bf_source AFL: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+captured close on 0 pending picks · settled 0
+steam: snapshot 0 selections across 4 sports
