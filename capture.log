@@ -371,3 +371,5 @@ steam: snapshot 40 selections across 4 sports
   bf_source WC: [Errno 54] Connection reset by peer
 captured close on 14 pending picks · settled 3
 steam: snapshot 14 selections across 4 sports
+captured close on 14 pending picks · settled 0
+steam: snapshot 34 selections across 4 sports
