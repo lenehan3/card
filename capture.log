@@ -375,3 +375,9 @@ captured close on 14 pending picks · settled 0
 steam: snapshot 34 selections across 4 sports
 captured close on 14 pending picks · settled 0
 steam: snapshot 42 selections across 4 sports
+  bf_source WC: <urlopen error [Errno 54] Connection reset by peer>
+captured close on 13 pending picks · settled 3
+steam: snapshot 18 selections across 4 sports
+  bf_source MLB: [Errno 54] Connection reset by peer
+captured close on 13 pending picks · settled 1
+steam: snapshot 46 selections across 4 sports
